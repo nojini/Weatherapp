@@ -62,9 +62,7 @@ android {
             testCoverageEnabled true
         }
     }
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
+    
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/LICENSE'
@@ -172,7 +170,6 @@ dependencies {
 
 ktlint {
     android = true
-    outputToConsole = true
     ignoreFailures = true
     enableExperimentalRules = true
     version = Versions.klintVersion
