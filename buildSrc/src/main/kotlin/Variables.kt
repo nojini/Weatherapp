@@ -53,7 +53,7 @@ object BuildPlugins {
     const val hiltGradle = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
 }
 
-object Dependencies {
+object Dependency {
     // kotlin
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlinVersion}"
