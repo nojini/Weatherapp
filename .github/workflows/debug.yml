@@ -1,0 +1,52 @@
+name: Debug
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  build-debug-apk:
+    name: Create Debug APK File
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Install JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set Gradle Property File
+        env:
+          PROPERTIES_FILE_PATH: .github/gradle/debug-gradle.properties
+          GRADLE_USER_HOME: ~/.gradle
+        run: |
+          mkdir -p ${GRADLE_USER_HOME}
+          mv ${PROPERTIES_FILE_PATH} ${GRADLE_USER_HOME}/gradle.properties
+
+      - name: Gradle Wrapper Validation
+        uses: gradle/wrapper-validation-action@v1
+        
+      - name: Assemble APK File
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: |
+            clean 
+            ktlintCheck 
+            lintDebug
+            testDebugUnitTest
+            assembleDebug
+
+      - name: Release New Version
+        uses: softprops/action-gh-release@v1
+        with: 
+          body: For Debugging purposes only.
+          prerelease: true
+          files: app/build/outputs/apk/release/*.apk
+          append_body: true
+          
