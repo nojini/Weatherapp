@@ -26,6 +26,8 @@ jobs:
           PROPERTIES_FILE_PATH: .github/gradle/debug-gradle.properties
           GRADLE_USER_HOME: ~/.gradle
         run: |
+          echo "PROPERTIES_FILE_PATH: ${PROPERTIES_FILE_PATH} | $PROPERTIES_FILE_PATH"
+          echo "GRADLE_USER_HOME: ${GRADLE_USER_HOME} | $GRADLE_USER_HOME
           mkdir -p ${GRADLE_USER_HOME}
           mv ${PROPERTIES_FILE_PATH} ${GRADLE_USER_HOME}/gradle.properties
 
@@ -40,13 +42,18 @@ jobs:
             ktlintCheck 
             lintDebug
             testDebugUnitTest
-            assembleDebug
+            assembleDebug --scan
 
       - name: Release New Version
         uses: softprops/action-gh-release@v1
         with: 
-          body: For Debugging purposes only.
-          prerelease: true
-          files: app/build/outputs/apk/release/*.apk
+          body: |
+            For Debugging purposes only.
+            Build Scan URL: ${{ steps.gradle.outputs.build-scan-url }}
           append_body: true
+          prerelease: true
+          files: |
+            app/build/outputs/apk/release/*.apk
+            build/reports/
+          
           
