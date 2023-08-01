@@ -1,0 +1,46 @@
+object Versions {
+    // gradle
+    const val googleGradleVersion = "4.2.0"
+    const val buildGradleVersion = "3.3.3"
+    const val kotlinVersion = "1.9.0"
+    const val navigationGradleVersion = "2.6.0"
+    const val hiltVersion = "2.47"
+    const val klintVersion = "0.41.0"
+
+    // dependency
+    const val supportVersion = "1.0.0"
+    const val appCompatVersion = "1.6.1"
+    const val materialDesignVersion = "1.9.0"
+    const val recyclerViewVersion = "1.3.1"
+    const val coreKtxVersion = "1.10.1"
+
+    const val lifecycleVersion = "2.2.0"
+    const val lifecycleViewModelKtxVersion = "2.4.0-alpha02"
+    const val roomVersion = "2.3.0"
+    const val navigationVersion = "2.4.0-alpha04"
+
+    const val rxJavaVersion = "2.2.21"
+    const val rxKotlinVersion = "2.4.0"
+    const val rxAndroidVersion = "2.1.1"
+    const val rxAnimationsVersion = "1.0.0"
+    const val retrofitVersion = "2.9.0"
+    const val okHttpVersion = "5.0.0-alpha.2"
+    const val moshiConverterVersion = "2.9.0"
+    const val moshiVersion = "1.12.0"
+    const val picassoVersion = "2.71828"
+    const val threetenabpVersion = "1.3.1"
+    const val shadowViewVersion = "0.0.3"
+    const val algoliaVersion = "3.+"
+    const val stethoVersion = "1.6.0"
+    const val timberVersion = "4.7.1"
+
+    const val coreTestingVersion = "2.1.0"
+    const val mockKVersion = "1.12.0"
+    const val truthExtVersion = "1.4.0"
+    const val truthVersion = "1.1.3"
+    const val androidxTestRunnerVersion = "1.4.0"
+    const val espressoCoreVersion = "3.4.0"
+    const val junitVersion = "4.12"
+    const val junitExtVersion = "1.1.1"
+    const val robolectricVersion = "4.6.1"
+}
