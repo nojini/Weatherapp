@@ -1,20 +1,20 @@
 object Versions {
     // gradle
-    const val googleGradleVersion = "4.3.8"
-    const val buildGradleVersion = "4.2.2"
-    const val kotlinVersion = "1.8.20"
-    const val navigationGradleVersion = "2.4.0-alpha04"
-    const val hiltVersion = "2.38"
-    const val klintVersion = "0.41.0"
+    const val googleGradleVersion = "4.2.0"
+    const val buildGradleVersion = "3.3.3"
+    const val kotlinVersion = "1.9.0"
+    const val navigationGradleVersion = "2.6.0"
+    const val hiltVersion = "2.47"
 
     // dependency
     const val supportVersion = "1.0.0"
-    const val appCompatVersion = "1.3.0"
-    const val materialDesignVersion = "1.4.0"
-    const val coreKtxVersion = "1.6.0"
+    const val appCompatVersion = "1.6.1"
+    const val materialDesignVersion = "1.9.0"
+    const val recyclerViewVersion = "1.3.1"
+    const val coreKtxVersion = "1.10.1"
 
-    const val lifecycleViewModelKtxVersion = "2.4.0-alpha02"
     const val lifecycleVersion = "2.2.0"
+    const val lifecycleViewModelKtxVersion = "2.4.0-alpha02"
     const val roomVersion = "2.3.0"
     const val navigationVersion = "2.4.0-alpha04"
 
@@ -61,7 +61,7 @@ object Dependencies {
     const val supportv4 = "androidx.legacy:legacy-support-v4:${Versions.supportVersion}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
     const val materialDesign = "com.google.android.material:material:${Versions.materialDesignVersion}"
-    const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.supportVersion}"
+    const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerViewVersion}"
     const val cardView = "androidx.cardview:cardview:${Versions.supportVersion}"
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtxVersion}"
 
