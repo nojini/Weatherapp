@@ -10,7 +10,7 @@ object Configs {
     const val minSdkVersion = 21
 
     const val versionCode = 3
-    const val versionName = "1.0.1"
+    const val versionName = "1.1.0"
 
     val buildTime = Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
     const val archivesBaseName = "weatherapp"
