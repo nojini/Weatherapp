@@ -2,7 +2,7 @@ object Versions {
     // gradle
     const val googleGradleVersion = "4.3.8"
     const val buildGradleVersion = "4.2.2"
-    const val kotlinVersion = "1.5.21"
+    const val kotlinVersion = "1.8.20"
     const val navigationGradleVersion = "2.4.0-alpha04"
     const val hiltVersion = "2.38"
     const val klintVersion = "0.41.0"
