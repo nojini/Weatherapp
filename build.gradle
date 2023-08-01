@@ -1,17 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-import com.faskn.app.weatherapp.Variables
-
 buildscript {
     repositories {
         mavenCentral()
         google()
     }
     dependencies {
-        classpath Variables.BuildPlugins.googleGradle
-        classpath Variables.BuildPlugins.buildGradle
-        classpath Variables.BuildPlugins.kotlinGradle
-        classpath Variables.BuildPlugins.navigationGradle
-        classpath Variables.BuildPlugins.hiltGradle
+        classpath BuildPlugins.googleGradle
+        classpath BuildPlugins.buildGradle
+        classpath BuildPlugins.kotlinGradle
+        classpath BuildPlugins.navigationGradle
+        classpath BuildPlugins.hiltGradle
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
