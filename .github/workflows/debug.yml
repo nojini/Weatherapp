@@ -41,7 +41,7 @@ jobs:
             ktlintCheck 
             lintDebug
             testDebugUnitTest
-            assembleDebug --scan
+            assembleDebug --scan --dry-run
 
       - name: Release New Version
         uses: softprops/action-gh-release@v1
