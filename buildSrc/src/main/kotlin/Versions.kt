@@ -22,7 +22,7 @@ object Versions {
     const val rxJavaVersion = "2.2.21"
     const val rxKotlinVersion = "2.4.0"
     const val rxAndroidVersion = "2.1.1"
-    const val rxAnimationsVersion = "1.0.0"
+    const val rxAnimationsVersion = "2.1.1"
     const val retrofitVersion = "2.9.0"
     const val okHttpVersion = "5.0.0-alpha.2"
     const val moshiConverterVersion = "2.9.0"
