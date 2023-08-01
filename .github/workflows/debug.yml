@@ -6,6 +6,10 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+.[0-9]+'
       - '[0-9]+.[0-9]+.[0-9]+'
 
+env:
+  PROPERTIES_FILE: .github/gradle/debug-gradle.properties
+  GRADLE_USER_HOME: ~/.gradle
+
 jobs:
   build-debug-apk:
     name: Create Debug APK File
@@ -22,14 +26,9 @@ jobs:
           java-version: '17'
 
       - name: Set Gradle Property File
-        env:
-          PROPERTIES_FILE_PATH: .github/gradle/debug-gradle.properties
-          GRADLE_USER_HOME: ~/.gradle
         run: |
-          echo "PROPERTIES_FILE_PATH: ${PROPERTIES_FILE_PATH} | $PROPERTIES_FILE_PATH"
-          echo "GRADLE_USER_HOME: ${GRADLE_USER_HOME} | $GRADLE_USER_HOME
           mkdir -p ${GRADLE_USER_HOME}
-          mv ${PROPERTIES_FILE_PATH} ${GRADLE_USER_HOME}/gradle.properties
+          mv ${PROPERTIES_FILE} ${GRADLE_USER_HOME}/gradle.properties
 
       - name: Gradle Wrapper Validation
         uses: gradle/wrapper-validation-action@v1
