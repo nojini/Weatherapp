@@ -1,4 +1,4 @@
-object Dependencies {
+object _Dependencies {
     // kotlin
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlinVersion}"
