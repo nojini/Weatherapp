@@ -94,75 +94,75 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // kotlin
-    implementation Dependencies.kotlin
-    implementation Dependencies.kotlinReflect
+    implementation _Dependencies.kotlin
+    implementation _Dependencies.kotlinReflect
 
     // android supports
-    implementation Dependencies.supportv4
-    implementation Dependencies.appCompat
-    implementation Dependencies.materialDesign
-    implementation Dependencies.recyclerView
-    implementation Dependencies.cardView
-    implementation Dependencies.coreKtx
+    implementation _Dependencies.supportv4
+    implementation _Dependencies.appCompat
+    implementation _Dependencies.materialDesign
+    implementation _Dependencies.recyclerView
+    implementation _Dependencies.cardView
+    implementation _Dependencies.coreKtx
 
     // architecture components
-    implementation Dependencies.navigationUI
-    implementation Dependencies.navigationFragment
-    implementation Dependencies.lifecycleExt
-    kapt Dependencies.lifecycleAnnotation
-    implementation Dependencies.liveDataKtx
-    implementation Dependencies.lifecycleViewModelKtx
-    implementation Dependencies.roomRuntime
-    kapt Dependencies.roomCompiler
+    implementation _Dependencies.navigationUI
+    implementation _Dependencies.navigationFragment
+    implementation _Dependencies.lifecycleExt
+    kapt _Dependencies.lifecycleAnnotation
+    implementation _Dependencies.liveDataKtx
+    implementation _Dependencies.lifecycleViewModelKtx
+    implementation _Dependencies.roomRuntime
+    kapt _Dependencies.roomCompiler
 
     // di
-    implementation Dependencies.hilt
-    kapt Dependencies.hiltKapt
+    implementation _Dependencies.hilt
+    kapt _Dependencies.hiltKapt
 
     // rx
-    implementation Dependencies.rxJava
-    implementation Dependencies.rxKotlin
-    implementation Dependencies.rxAndroid
-    implementation Dependencies.rxAnimations
+    implementation _Dependencies.rxJava
+    implementation _Dependencies.rxKotlin
+    implementation _Dependencies.rxAndroid
+    implementation _Dependencies.rxAnimations
 
     // network
-    implementation Dependencies.retrofit
-    implementation Dependencies.okHttp
-    implementation Dependencies.moshi
-    implementation Dependencies.moshiConverter
-    implementation Dependencies.moshiKotlin
-    kapt Dependencies.moshiKapt
-    implementation Dependencies.rxJavaAdapter
+    implementation _Dependencies.retrofit
+    implementation _Dependencies.okHttp
+    implementation _Dependencies.moshi
+    implementation _Dependencies.moshiConverter
+    implementation _Dependencies.moshiKotlin
+    kapt _Dependencies.moshiKapt
+    implementation _Dependencies.rxJavaAdapter
 
     // image
-    implementation Dependencies.picasso
+    implementation _Dependencies.picasso
 
     // debug
-    implementation Dependencies.stethoCore
-    implementation Dependencies.stethoOkHttp
-    implementation Dependencies.stethoUrlConnection
-    implementation Dependencies.timber
+    implementation _Dependencies.stethoCore
+    implementation _Dependencies.stethoOkHttp
+    implementation _Dependencies.stethoUrlConnection
+    implementation _Dependencies.timber
 
     // shadow view
-    implementation Dependencies.shadowView
+    implementation _Dependencies.shadowView
 
     // date & time
-    implementation Dependencies.threetenabp
+    implementation _Dependencies.threetenabp
 
     // search
-    implementation Dependencies.algolia
+    implementation _Dependencies.algolia
 
     // test
-    testImplementation Dependencies.junit
-    testImplementation Dependencies.junitTestExt
-    androidTestImplementation Dependencies.androidxTestRunner
-    androidTestImplementation Dependencies.androidxTestRules
-    androidTestImplementation Dependencies.espressoCore
-    testImplementation Dependencies.truthExt
-    testImplementation Dependencies.truth
-    testImplementation Dependencies.mockK
-    testImplementation Dependencies.coreTesting
-    testImplementation Dependencies.robolectric
+    testImplementation _Dependencies.junit
+    testImplementation _Dependencies.junitTestExt
+    androidTestImplementation _Dependencies.androidxTestRunner
+    androidTestImplementation _Dependencies.androidxTestRules
+    androidTestImplementation _Dependencies.espressoCore
+    testImplementation _Dependencies.truthExt
+    testImplementation _Dependencies.truth
+    testImplementation _Dependencies.mockK
+    testImplementation _Dependencies.coreTesting
+    testImplementation _Dependencies.robolectric
 }
 
 ktlint {
