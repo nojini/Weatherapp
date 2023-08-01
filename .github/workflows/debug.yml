@@ -7,8 +7,8 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+'
 
 env:
-  PROPERTIES_FILE: .github/gradle/debug-gradle.properties
-  GRADLE_USER_HOME: ~/.gradle
+  PROPERTIES_FILE: '.github/gradle/debug-gradle.properties'
+  GRADLE_USER_HOME: '~/.gradle'
 
 jobs:
   build-debug-apk:
