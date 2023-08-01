@@ -29,6 +29,7 @@ jobs:
         run: |
           mkdir -p ${GRADLE_USER_HOME}
           mv ${PROPERTIES_FILE} ${GRADLE_USER_HOME}/gradle.properties
+          ls -a ${GRADLE_USER_HOME}
 
       - name: Gradle Wrapper Validation
         uses: gradle/wrapper-validation-action@v1
