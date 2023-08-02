@@ -11,10 +11,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'com.google.devtools.ksp'
-}
-
 def STRING = 'String'
 def BUILD_TIME = 'BUILD_TIME'
 
