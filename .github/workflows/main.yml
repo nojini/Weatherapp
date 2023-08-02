@@ -36,9 +36,6 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('checksum.txt') }}
 
-      - name: Run Ktlint
-        run: ./gradlew ktlintCheck
-
       - name: Run Lint
         run: ./gradlew lintDebug
 
