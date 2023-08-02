@@ -162,5 +162,3 @@ dependencies {
     testImplementation _Dependencies.coreTesting
     testImplementation _Dependencies.robolectric
 }
-
-apply plugin: 'com.google.gms.google-services'
