@@ -5,7 +5,6 @@ object Versions {
     const val kotlinVersion = "1.9.0"
     const val navigationGradleVersion = "2.6.0"
     const val hiltVersion = "2.47"
-    const val klintVersion = "0.41.0"
 
     // dependency
     const val supportVersion = "1.0.0"
