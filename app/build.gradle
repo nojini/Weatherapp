@@ -170,9 +170,7 @@ dependencies {
 
 ktlint {
     android = true
-    ignoreFailures = true
-    enableExperimentalRules = true
-    debug = true
+    verbose = true
     version = Versions.klintVersion
     kotlinScriptAdditionalPaths {
         include fileTree("scripts/")
